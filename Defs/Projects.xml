@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- To add a research tab, make a new ResearchTabDef here and then set the <tab> field of your research project to match it -->
+	
+	<ResearchTabDef>
+		<defName>CryogenicPower</defName>
+		<label>Cryogenic Power</label>
+	</ResearchTabDef>
+
+	<!-- Cryotech -->
+	
+	
+  <ResearchProjectDef>
+    <defName>MiniCryoPower</defName>
+    <label>mini cryogenic power</label>
+	<tab>CryogenicPower</tab>
+    <description>Build a movable cryogenic generators on top of any Ground.</description>
+    <baseCost>1250</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>GeothermalPower</li>
+	  <li>MultiAnalyzer</li>
+	  <li>Batteries</li>
+	  <li>BiofuelRefining</li>
+	  <li>Fabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>0.0</researchViewX>
+    <researchViewY>1.0</researchViewY>
+  </ResearchProjectDef>
+
+	
+	
+</Defs>
+

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BuildingBase">
+    <defName>MiniCryogenicPowerGenerator</defName>
+    <label>Mini Cryogenic generator</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+		<texPath>Things/Power/MiniCryoGenerator</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+		<drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0.3,0,5.4,6)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>30</pathCost>
+	<passability>PassThroughOnly</passability>
+	<castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>1750</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-10</Beauty>
+			<Mass>40</Mass>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+    <description>Produces energy by compressing and refrigerating air into liquid, then controlling the evaporation and expansion of it. Puts off dangerous amounts of cold air and requires no fuel source.</description>
+    <size>(2,2)</size>
+	<selectable>true</selectable>
+    <costList>
+	  <Steel>125</Steel>
+	  <Chemfuel>50</Chemfuel>
+	  <Plasteel>20</Plasteel>
+	  <Neutroamine>25</Neutroamine>
+	  <Gold>20</Gold>
+	  <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-1500</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+	    <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>
+        <glowColor>(0,200,250,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-30</heatPerSecond>
+        <heatPushMinTemperature>-100</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_SnowExpand">
+	      <addAmount>0.10</addAmount>
+		  <expandInterval>1000</expandInterval>
+		  <maxRadius>15</maxRadius>
+	  </li>
+	  <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.0</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.0</chanceNeverExplodeFromDamage>
+      </li>
+    </comps>
+    <rotatable>True</rotatable>
+    <designationCategory>Power</designationCategory>
+    <building>
+      <soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+	  <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+		<li>MiniCryoPower</li>
+	</researchPrerequisites>
+	<constructionSkillPrerequisite>11</constructionSkillPrerequisite>
+  </ThingDef>
+	
+	
+</Defs>
