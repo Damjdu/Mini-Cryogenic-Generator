@@ -19,11 +19,7 @@
     <baseCost>1250</baseCost>
     <techLevel>Ultra</techLevel>
     <prerequisites>
-      <li>GeothermalPower</li>
-	  <li>MultiAnalyzer</li>
-	  <li>Batteries</li>
-	  <li>BiofuelRefining</li>
-	  <li>Fabrication</li>
+	  <li>CryoPowerI</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
