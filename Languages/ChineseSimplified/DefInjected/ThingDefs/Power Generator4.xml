@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Mini Cryogenic generator -->
+  <MiniCryogenicPowerGenerator.label>迷你制冷发电机</MiniCryogenicPowerGenerator.label>
+  <!-- EN: Produces energy by compressing and refrigerating air into liquid, then controlling the evaporation and expansion of it. Puts off dangerous amounts of cold air and requires no fuel source. -->
+  <MiniCryogenicPowerGenerator.description>通过压缩空气并将其冷冻成液体，然后控制其蒸发和膨胀来产生能量，周围必须保持干燥。可释放大量冷空气且无需燃料。</MiniCryogenicPowerGenerator.description>
+  
+</LanguageData>
